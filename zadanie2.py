@@ -2,10 +2,8 @@
 
 n = int(input('Введите число: '))
 list = []
-res = 0
 for i in range(1, n+1):
     list.append(round((1 + 1/i)**i, 2))
-    res += (1 + 1/i)**i
 print(list)
-print('Суммма элементов списка:', round(res, 2))
+print('Суммма элементов списка:', round(sum(list), 2))
 
